@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require "raindrops.rb"
+require_relative 'raindrops'
 
 class MagicBallTest < Minitest::Test
   def test_check_modulus_true
