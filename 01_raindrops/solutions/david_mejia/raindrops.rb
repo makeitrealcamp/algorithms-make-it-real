@@ -6,7 +6,7 @@ class Raindrops
   end
    
   def is_raining
-    "#{pling}#{plang}#{plong}"
+    "#{pling}#{plang}#{plong}" != "" ? "#{pling}#{plang}#{plong}" : @number
   end
 
   def pling
@@ -22,14 +22,10 @@ class Raindrops
   end
 
   def check_modulus(number, factor)
-    if number%factor == 0
-      true
-    else
-      false
-    end
+     number%factor == 0
   end
 end
 
-weather = Raindrops.new(35)
+weather = Raindrops.new(34)
 
 puts weather.is_raining
