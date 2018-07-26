@@ -17,12 +17,12 @@ class Squares
 
 private 
 	def recursive_sum (num)
-		return 1 if num <=1
+		return 0 if num <=0
 		return num + recursive_sum(num-1)
 	end
 
 	def recursive_square_sum (num)
-		return 1 if num <=1
+		return 0 if num <=0
 		return num**2 + recursive_square_sum(num-1)
 	end
 end
