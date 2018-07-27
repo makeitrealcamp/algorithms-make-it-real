@@ -12,9 +12,7 @@ attr_accessor :n
   end
 
   def build_vector
-    @n.times do |num|
-      @numbers << num+1
-    end
+    @n.times{|num| @numbers << num+1}
   end
 
   def square_of_sum
@@ -22,13 +20,10 @@ attr_accessor :n
   end
 
   def sum_of_squares
-    result = @numbers.map do|num|
-      num**2
-    end
-    result.sum
+    @numbers.map{|num| num**2}.sum
   end
 end
-x = 100
+x = 10
 
  p Squares.new(x).difference
 
