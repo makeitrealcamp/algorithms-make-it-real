@@ -4,38 +4,38 @@ require_relative 'difference_of_squares'
 # Common test data version: 1.1.0 7a1108b
 class DifferenceOfSquaresTest < Minitest::Test
   def test_square_of_sum_1
-    assert_equal 1, Squares.square_of_sum(1)
+    assert_equal 1, Squares.new(1).square_of_sum
   end
 
   def test_square_of_sum_5
-    assert_equal 225, Squares.square_of_sum(5)
+    assert_equal 225, Squares.new(5).square_of_sum
   end
 
   def test_square_of_sum_100
-    assert_equal 25_502_500, Squares.square_of_sum(100)
+    assert_equal 25_502_500, Squares.new(100).square_of_sum
   end
 
   def test_sum_of_squares_1
-    assert_equal 1, Squares.sum_of_squares(1)
+    assert_equal 1, Squares.new(1).sum_of_squares
   end
 
   def test_sum_of_squares_5
-    assert_equal 55, Squares.sum_of_squares(5)
+    assert_equal 55, Squares.new(5).sum_of_squares
   end
 
   def test_sum_of_squares_100
-    assert_equal 338_350, Squares.sum_of_squares(100)
+    assert_equal 338_350, Squares.new(100).sum_of_squares
   end
 
   def test_difference_of_squares_1
-    assert_equal 0, Squares.difference(1)
+    assert_equal 0, Squares.new(1).difference
   end
 
   def test_difference_of_squares_5
-    assert_equal 170, Squares.difference(5)
+    assert_equal 170, Squares.new(5).difference
   end
 
   def test_difference_of_squares_100
-    assert_equal 25_164_150, Squares.difference(100)
+    assert_equal 25_164_150, Squares.new(100).difference
   end
 end
