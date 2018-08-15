@@ -2,6 +2,7 @@ require "minitest/autorun"
 require_relative 'raindrops'
 
 class RaindropsTest < Minitest::Test
+
   def test_check_modulus_true
     today = Raindrops.new(10)
     assert today.check_modulus(9,9) == true
